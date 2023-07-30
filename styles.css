@@ -1,27 +1,30 @@
+:root {
+	--font-colour-1: #4d4d4d;
+	--font-colour-2: rgb(63, 78, 108);
+	font-family: sans-serif;
+}
+
 .logo-links {
-	/* border: 2px solid red; */
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	height: fit-content;
 }
 
 .nav-logo {
-	/* display: flex; */
 	justify-self: start;
-	/* border: 2px solid red; */
 }
 
 .nav-links {
-	/* width: 20%; */
-	/* gap: 25px; */
 	justify-self: end;
-	/* border: 2px solid red; */
-	/* margin-right: 55px; */
 }
 
 .nav-links a {
 	margin-right: 25px;
-	/* gap: 25px; */
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-family: sans-serif;
 }
 
 .hero-section {
@@ -30,4 +33,240 @@
 	height: 630px;
 	background-position: 80% 20%;
 	background-size: 100vw;
+	background-repeat: no-repeat;
+}
+
+.big-name-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 0;
+	margin: 10px 0 0 150px;
+}
+
+.big-name {
+	display: flex;
+	flex-direction: column;
+	font-size: 60px;
+	padding: 20px;
+	margin: 20px;
+	font-family: sans-serif;
+}
+
+.buffer {
+	/* outline: 1px solid red; */
+	display: flex;
+	justify-content: space-around;
+}
+
+.buffer-logo {
+	filter: drop-shadow(1px -1px 1px darkblue);
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.logo-and-text {
+	display: flex;
+}
+
+.logo-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.buffer-links {
+	justify-self: end;
+	align-self: center;
+}
+
+.buffer-links a {
+	margin-right: 25px;
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+	font-family: sans-serif;
+}
+
+.font-1 {
+	color: var(--font-colour-1);
+}
+
+.font-2 {
+	color: var(--font-colour-2);
+}
+
+.history-section {
+	background-image: url("./assets/peak.png");
+	width: auto;
+	height: 630px;
+	background-position: 100% 40%;
+	background-size: 100vw;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.history-content-container {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.history-header {
+	/* border: solid 2px red; */
+	color: var(--font-colour-2);
+	/* padding: 0;
+	margin: 0; */
+}
+
+.history-header .number {
+	font-size: 100px;
+	color: rgba(97, 91, 128, 0.5);
+	/* padding: 0;
+	margin: 0; */
+}
+
+.history-header .section-title {
+	font-size: x-large;
+	display: inline;
+	position: relative;
+	top: -20px;
+	left: -25px;
+	font-weight: bold;
+	/* padding-bottom: 0;
+	margin-bottom: 0; */
+}
+
+.history-text {
+	font-size: x-small;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.carousel {
+	background-color: rgba(63, 78, 108, 0.5);
+	position: absolute;
+	top: 485px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.carousel-images {
+	padding: 20px 5px;
+}
+
+.climb-section {
+	display: flex;
+	justify-content: center;
+}
+
+.climb-content-container {
+	/* outline: solid 1px red; */
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	position: relative;
+}
+
+.climb-header .number {
+	color: rgba(97, 91, 128, 0.5);
+	font-size: 100px;
+	position: relative;
+}
+
+.climb-header .section-title {
+	font-size: x-large;
+	display: inline;
+	position: absolute;
+	top: 55px;
+	left: 120px;
+	font-weight: bold;
+	color: var(--font-colour-2);
+}
+
+.climb-content-container p {
+	font-size: small;
+	/* border: solid 2px red; */
+	position: relative;
+	top: 30px;
+	left: 80px;
+}
+
+.mountain-tabs {
+	background-color: var(--font-colour-2);
+	display: flex;
+	justify-content: center;
+}
+
+.tabs-inner {
+	width: 60%;
+	/* outline: solid 2px red; */
+	display: flex;
+	/* padding: 5px 10px; */
+	gap: 10px;
+}
+
+.tabs-inner p {
+	margin: 0;
+}
+
+.mountain-tab-1 {
+	color: var(--font-colour-2);
+	font-weight: bold;
+	background-color: lightgray;
+	padding: 3px 10px;
+}
+
+.mountain-tab-2 {
+	color: lightgrey;
+	font-weight: bold;
+	padding: 3px 10px;
+}
+
+.schedule-section {
+	background-image: url("./assets/schedule-mountain.png");
+	width: auto;
+	height: 500px;
+	background-position: 30% 50%;
+	/* background-size: 100vw; */
+	/* display: flex; */
+	/* justify-content: center; */
+	position: relative;
+}
+
+.schedule-box {
+	/* outline: 2px solid red; */
+	width: 40%;
+	position: absolute;
+	top: 70px;
+	left: 175px;
+	display: flex;
+	background-color: rgb(255, 255, 255, 0.5);
+	display: flex;
+	flex-direction: column;
+}
+
+.schedule-box .section-title {
+	font-size: x-large;
+	display: block;
+	/* position: absolute;
+	top: 55px;
+	left: 120px; */
+	font-weight: bold;
+	color: var(--font-colour-2);
+}
+
+.schedule-row {
+	display: flex;
+	gap: 25px;
+}
+
+.schedule-divider {
+	margin: 10px 5px;
+}
+
+.schedule-box p {
+	margin: 0;
 }
