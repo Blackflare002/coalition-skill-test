@@ -4,6 +4,10 @@
 	font-family: sans-serif;
 }
 
+body {
+	margin: 0;
+}
+
 .logo-links {
 	display: flex;
 	justify-content: space-around;
@@ -102,6 +106,7 @@
 	height: 630px;
 	background-position: 100% 40%;
 	background-size: 100vw;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -116,15 +121,11 @@
 .history-header {
 	/* border: solid 2px red; */
 	color: var(--font-colour-2);
-	/* padding: 0;
-	margin: 0; */
 }
 
 .history-header .number {
 	font-size: 100px;
 	color: rgba(97, 91, 128, 0.5);
-	/* padding: 0;
-	margin: 0; */
 }
 
 .history-header .section-title {
@@ -134,8 +135,6 @@
 	top: -20px;
 	left: -25px;
 	font-weight: bold;
-	/* padding-bottom: 0;
-	margin-bottom: 0; */
 }
 
 .history-text {
@@ -204,7 +203,6 @@
 	width: 60%;
 	/* outline: solid 2px red; */
 	display: flex;
-	/* padding: 5px 10px; */
 	gap: 10px;
 }
 
@@ -230,9 +228,6 @@
 	width: auto;
 	height: 500px;
 	background-position: 30% 50%;
-	/* background-size: 100vw; */
-	/* display: flex; */
-	/* justify-content: center; */
 	position: relative;
 }
 
@@ -251,9 +246,6 @@
 .schedule-box .section-title {
 	font-size: x-large;
 	display: block;
-	/* position: absolute;
-	top: 55px;
-	left: 120px; */
 	font-weight: bold;
 	color: var(--font-colour-2);
 }
@@ -269,4 +261,31 @@
 
 .schedule-box p {
 	margin: 0;
+}
+
+footer {
+	background-color: var(--font-colour-2);
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+footer .logo-and-text {
+	width: 60%;
+	/* outline: 2px solid red; */
+	opacity: 0.3;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .buffer-logo {
+	margin: 10px;
+}
+
+footer .logo-text {
+	font-weight: bold;
+}
+
+.logo-plus-text {
+	display: flex;
 }
